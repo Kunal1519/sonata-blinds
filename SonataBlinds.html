@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonata Blinds - Premium Window Covering Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .blinds-transition {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        .nav-link:hover::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #d1a054;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-blinds text-amber-600 text-3xl mr-3"></i>
+                <h1 class="text-2xl font-bold text-gray-800">SONATA BLINDS</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-700 font-medium hover:text-amber-600">Home</a>
+                <a href="#products" class="nav-link text-gray-700 font-medium hover:text-amber-600">Products</a>
+                <a href="#about" class="nav-link text-gray-700 font-medium hover:text-amber-600">About Us</a>
+                <a href="#testimonials" class="nav-link text-gray-700 font-medium hover:text-amber-600">Testimonials</a>
+                <a href="#contact" class="nav-link text-gray-700 font-medium hover:text-amber-600">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-amber-600">Home</a>
+            <a href="#products" class="block py-2 text-gray-700 hover:text-amber-600">Products</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-amber-600">About Us</a>
+            <a href="#testimonials" class="block py-2 text-gray-700 hover:text-amber-600">Testimonials</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-amber-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Premium Window Coverings</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Experience the perfect blend of style, functionality, and quality with Sonata Blinds' premium window treatment solutions.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#products" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Explore Products</a>
+                <a href="#contact" class="bg-transparent hover:bg-white hover:text-gray-900 border-2 border-white text-white font-bold py-3 px-8 rounded-full transition duration-300">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg">
+                    <div class="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-award text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Premium Quality</h3>
+                    <p class="text-gray-600">Crafted with the finest materials and attention to detail for lasting durability.</p>
+                </div>
+                <div class="text-center p-6 rounded-lg">
+                    <div class="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-tools text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Custom Solutions</h3>
+                    <p class="text-gray-600">Tailored to fit your windows perfectly and match your interior style.</p>
+                </div>
+                <div class="text-center p-6 rounded-lg">
+                    <div class="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-headset text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Exceptional Service</h3>
+                    <p class="text-gray-600">From consultation to installation, we're with you every step of the way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Premium Blinds Collection</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Zebra Blinds -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md blinds-transition">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Zebra Blinds" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Zebra Blinds</h3>
+                        <p class="text-gray-600 mb-4">The perfect combination of sheer and privacy with alternating stripes that can be adjusted to control light and visibility.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">Starting from ₹2,500</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roller Blinds -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md blinds-transition">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566752227-8a1b3f108523?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Roller Blinds" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Roller Blinds</h3>
+                        <p class="text-gray-600 mb-4">Simple, elegant and practical window covering that rolls up neatly when not in use. Available in various fabrics and patterns.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">Starting from ₹1,800</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vertical Blinds -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md blinds-transition">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Vertical Blinds" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Vertical Blinds</h3>
+                        <p class="text-gray-600 mb-4">Ideal for large windows and sliding doors, these blinds offer excellent light control and come in various materials.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">Starting from ₹2,200</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Venetian Blinds -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md blinds-transition">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Venetian Blinds" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Venetian Blinds</h3>
+                        <p class="text-gray-600 mb-4">Classic horizontal slats that can be tilted to control light and privacy. Available in aluminum, wood, and faux wood.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">Starting from ₹2,800</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wooden Blinds -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md blinds-transition">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Wooden Blinds" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Wooden Blinds</h3>
+                        <p class="text-gray-600 mb-4">Bring natural warmth to your space with our premium wooden blinds, crafted from high-quality timber with a durable finish.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">Starting from ₹3,500</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Honeycomb Blinds -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md blinds-transition">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566752145-3d5d1b7b5a2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Honeycomb Blinds" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Honeycomb Blinds</h3>
+                        <p class="text-gray-600 mb-4">Also known as cellular shades, these blinds provide excellent insulation with their unique honeycomb structure.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">Starting from ₹3,200</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button id="show-more-products" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-8 rounded-full transition duration-300">View More Products</button>
+            </div>
+
+            <!-- Additional Products (Hidden by default) -->
+            <div id="more-products" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <!-- Roman Blinds -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md blinds-transition">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566752227-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Roman Blinds" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Roman Blinds</h3>
+                        <p class="text-gray-600 mb-4">Elegant fabric blinds that fold into neat pleats when raised, creating a sophisticated look for any room.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">Starting from ₹3,800</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Open Roman Blinds -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md blinds-transition">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566752227-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Open Roman Blinds" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Open Roman Blinds</h3>
+                        <p class="text-gray-600 mb-4">A variation of Roman blinds with spaces between the folds, allowing some light to filter through while maintaining privacy.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">Starting from ₹3,500</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Triped Shade -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md blinds-transition">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566752227-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Triped Shade" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Triped Shade</h3>
+                        <p class="text-gray-600 mb-4">A unique three-layer fabric system that provides excellent light control, insulation, and UV protection.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">Starting from ₹4,200</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Varman Blinds -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md blinds-transition">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566752227-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Varman Blinds" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Varman Blinds</h3>
+                        <p class="text-gray-600 mb-4">Premium designer blinds that combine functionality with artistic patterns, perfect for modern interiors.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">Starting from ₹4,500</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Motorized Blinds -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md blinds-transition">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566752227-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Motorized Blinds" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Motorized Blinds</h3>
+                        <p class="text-gray-600 mb-4">Experience ultimate convenience with our smart motorized blinds that can be controlled remotely via app or voice commands.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">Starting from ₹6,500</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+                    <img src="https://images.unsplash.com/photo-1600566752227-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="About Sonata Blinds" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">About Sonata Blinds</h2>
+                    <p class="text-gray-600 mb-4">Founded with a vision to transform spaces with premium window treatments, Sonata Blinds has been serving Delhi and surrounding areas with exceptional quality blinds and shades for over a decade.</p>
+                    <p class="text-gray-600 mb-6">Our team of skilled professionals is dedicated to helping you find the perfect window covering solution that matches your style, budget, and functional requirements. From traditional to contemporary designs, we offer an extensive range of options to suit every taste.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-amber-600"></i>
+                            </div>
+                            <p class="text-gray-700">Custom-made blinds to fit your windows perfectly</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-amber-600"></i>
+                            </div>
+                            <p class="text-gray-700">Premium materials that stand the test of time</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-amber-600"></i>
+                            </div>
+                            <p class="text-gray-700">Professional installation by our experienced team</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-amber-600"></i>
+                            </div>
+                            <p class="text-gray-700">Exceptional after-sales service and support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Priya Sharma</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The zebra blinds I got from Sonata Blinds have completely transformed my living room. The quality is exceptional and the installation was done perfectly. Highly recommended!"</p>
+                </div>
+
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Rahul Mehta</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"I'm extremely satisfied with the motorized blinds installed in my home office. The convenience is unmatched and the team at Sonata Blinds made the entire process seamless."</p>
+                </div>
+
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Ananya Kapoor</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The wooden blinds in my bedroom are absolutely stunning. They provide the perfect amount of light control and add a warm, natural element to the space. Excellent craftsmanship!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Ready to transform your windows? Contact us today for a free consultation and quote.</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Our Address</h4>
+                                    <p class="text-gray-600">House no-174, opposite Yadav Bakery, Bhalswa, Jahangir Puri, Delhi-110033</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Phone Number</h4>
+                                    <p class="text-gray-600">9811794247</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Email Address</h4>
+                                    <p class="text-gray-600">info@sonatablinds.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Working Hours</h4>
+                                    <p class="text-gray-600">Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                                    <p class="text-gray-600">Sunday: 10:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-1">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-1">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-1">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-1">Your Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition"></textarea>
+                            </div>
+                            <button type="submit" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 w-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.876123456789!2d77.12345678901234!3d28.76543210987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDQ1JzU1LjYiTiA3N8KwMDcnNDEuOSJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-blinds text-amber-600 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold">SONATA BLINDS</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Premium window covering solutions for homes and offices in Delhi and surrounding areas.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-amber-600 transition">Home</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-amber-600 transition">Products</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-amber-600 transition">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-amber-600 transition">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-amber-600 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-amber-600 transition">Zebra Blinds</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-600 transition">Roller Blinds</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-600 transition">Vertical Blinds</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-600 transition">Wooden Blinds</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-600 transition">Motorized Blinds</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-amber-600 mt-1 mr-3"></i>
+                            <span>House no-174, opposite Yadav Bakery, Bhalswa, Jahangir Puri, Delhi-110033</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-amber-600 mr-3"></i>
+                            <span>9811794247</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-amber-600 mr-3"></i>
+                            <span>info@sonatablinds.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Sonata Blinds. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/919811794247" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Show More Products
+        document.getElementById('show-more-products').addEventListener('click', function() {
+            const moreProducts = document.getElementById('more-products');
+            const button = document.getElementById('show-more-products');
+            
+            if (moreProducts.classList.contains('hidden')) {
+                moreProducts.classList.remove('hidden');
+                button.textContent = 'Show Less Products';
+            } else {
+                moreProducts.classList.add('hidden');
+                button.textContent = 'View More Products';
+            }
+        });
+
+        // Form Submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (!document.getElementById('mobile-menu').classList.contains('hidden')) {
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
