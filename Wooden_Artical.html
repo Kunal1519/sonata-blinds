@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Sonata Blinds</title>
+  <meta name="title" content="Sonata Blinds | Premium Window Coverings">
+  <meta name="description" content="Discover premium window treatment solutions with Sonata Blinds. Style, functionality, and top-quality wooden blinds for your home or office.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sonatablinds.com/">
+  <meta property="og:title" content="Sonata Blinds | Premium Window Coverings">
+  <meta property="og:description" content="Discover premium window treatment solutions with Sonata Blinds. Style, functionality, and top-quality wooden blinds.">
+  <meta property="og:image" content="https://www.sonatablinds.com/images/logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.sonatablinds.com/">
+  <meta property="twitter:title" content="Sonata Blinds | Premium Window Coverings">
+  <meta property="twitter:description" content="Discover premium window treatment solutions with Sonata Blinds. Style, functionality, and top-quality wooden blinds.">
+  <meta property="twitter:image" content="https://www.sonatablinds.com/images/twitter-card.jpg">
+
+  <!-- Instagram -->
+  <meta property="Instagram:card" content="summary_large_image">
+  <meta property="Instagram:url" content="https://www.instagram.com/sonatablind?igsh=YjM1ajBpbXUzamxl/">
+  <meta property="Instagram:title" content="Sonata Blinds | Premium Window Coverings">
+  <meta property="Instagram:description" content="Discover premium window treatment solutions with Sonata Blinds. Style, functionality, and top-quality wooden blinds.">
+  <meta property="Instagram:image" content="https://www.sonatablinds.com/images/twitter-card.jpg">
+
+
+
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+      font-family: 'Inter', sans-serif;
+    }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .blinds-transition {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        .nav-link:hover::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #d1a054;
+            margin-top: 2px;
+        }
+        .hero_Banner {
+            background-color: #294058;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .artical_container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #222;
+      margin-top: 1rem;
+    }
+    .artical_container img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-blinds text-amber-600 text-3xl mr-3"></i>
+                <img src="/images/logo.jpg" alt="Logo" style="width: 100px;">
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="/index.html" class="nav-link text-gray-700 font-medium hover:text-amber-600">Home</a>
+                <a href="#products" class="nav-link text-gray-700 font-medium hover:text-amber-600">Products</a>
+                <a href="#about" class="nav-link text-gray-700 font-medium hover:text-amber-600">About Us</a>
+                <a href="/blog.html" class="nav-link text-gray-700 font-medium hover:text-amber-600">Updates</a>
+                <a href="#testimonials" class="nav-link text-gray-700 font-medium hover:text-amber-600">Testimonials</a>
+                <a href="#contact" class="nav-link text-gray-700 font-medium hover:text-amber-600">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-amber-600">Home</a>
+            <a href="#products" class="block py-2 text-gray-700 hover:text-amber-600">Products</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-amber-600">About Us</a>
+            <a href="#testimonials" class="block py-2 text-gray-700 hover:text-amber-600">Testimonials</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-amber-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+     <section class="text-white hero_Banner">
+        <span class="text-4xl md:text-6xl font-bold mb-4">Wooden Blinds</span>
+     </section>
+
+     <main class="artical_container">
+        <p class="meta">Published on May 24, 2025 by Sonata Blinds</p>
+    
+        <img src="/images/Wooden_Hero_Banner.png" alt="Wooden Blinds" />
+    
+        <h2>Premium Wooden Blinds – Crafted by Sonata Blinds in Noida</h2>
+        <p><strong>Bring timeless elegance and natural warmth to your interiors with our premium range of Wooden Blinds, proudly manufactured by Sonata Blinds – a trusted name and a leading force in India’s blinds industry.</strong></p>
+        <br/>
+        <br/>
+
+        <h2><strong>Blinds: The Minimalist's Dream</strong></h2>
+        <p>At Sonata Blinds, we specialize in crafting high-quality wooden blinds that combine classic style with modern functionality. Made from carefully selected hardwoods and treated with precision finishes, our blinds offer unmatched durability, beauty, and control over light and privacy.</p>
+        <br/>
+        <br/>
+
+        <h2><strong> Why Choose Sonata Wooden Blinds?</strong></h2>
+        <p>
+            <strong>✅ Made in India </strong>by industry-leading experts with over a decade of experience <br/>
+
+            <strong>🌳 Natural Wood Finish </strong>– Choose from rich grains, stains, and colors <br/>
+
+            <strong>🛠️ Custom Sizes & Fit </strong>– Tailored to your exact window dimensions <br/>
+
+            <strong>🎯 Smooth Operation </strong>– Easy-to-use tilt and lift mechanisms <br/>
+
+            <strong>☀️ Light & Privacy Control </strong>– Perfect for homes, offices, and showrooms <br/>
+
+            <strong>🧼 Low Maintenance </strong>– Easy to clean and resistant to moisture (ideal for living areas, bedrooms, and offices) <br/>
+        </p>
+        <br/>
+        <br/>
+    
+        <h2><strong>Customization Options:</strong></h2>
+        <p>
+            Slat Sizes: 35mm / 50mm
+            <br/>
+            Wood Types: Basswood, Faux Wood, Bamboo (on request)
+            <br/>
+            Finish: Matte, Glossy, Textured Woodgrain
+            <br/>
+            Control: Corded / Motorized / Wand Control
+        </p>
+        <br/>
+        <br/>
+
+        <h2><strong>🏆 Why Sonata Blinds?</strong></h2>
+        <p>As one of India’s <strong>leading  blinds manufacturers</strong>, Sonata Blinds has set benchmarks in innovation, quality, and customer satisfaction. Whether you're an interior designer, architect, builder, or homeowner – we offer premium products at factory-direct prices.</p>
+      </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-blinds text-amber-600 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold">SONATA BLINDS</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Premium window covering solutions for homes and offices in Delhi and surrounding areas.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-amber-600 transition">Home</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-amber-600 transition">Products</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-amber-600 transition">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-amber-600 transition">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-amber-600 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-amber-600 transition">Zebra Blinds</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-600 transition">Roller Blinds</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-600 transition">Vertical Blinds</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-600 transition">Wooden Blinds</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-600 transition">Motorized Blinds</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-amber-600 mt-1 mr-3"></i>
+                            <span>House no-174, opposite Yadav Bakery, Bhalswa, Jahangir Puri, Delhi-110033</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-amber-600 mr-3"></i>
+                            <span>9811794247</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-amber-600 mr-3"></i>
+                            <span>info@sonatablinds.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Sonata Blinds. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/919811794247" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Show More Products
+        document.getElementById('show-more-products').addEventListener('click', function() {
+            const moreProducts = document.getElementById('more-products');
+            const button = document.getElementById('show-more-products');
+            
+            if (moreProducts.classList.contains('hidden')) {
+                moreProducts.classList.remove('hidden');
+                button.textContent = 'Show Less Products';
+            } else {
+                moreProducts.classList.add('hidden');
+                button.textContent = 'View More Products';
+            }
+        });
+
+        // Form Submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (!document.getElementById('mobile-menu').classList.contains('hidden')) {
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
