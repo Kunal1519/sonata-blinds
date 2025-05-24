@@ -64,7 +64,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-bg text-white py-20 md:py-32">
+    <!-- <section id="home" class="hero-bg text-white py-20 md:py-32">
         <div class="container mx-auto px-4 text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Premium Window Coverings</h1>
             <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Experience the perfect blend of style, functionality, and quality with Sonata Blinds' premium window treatment solutions.</p>
@@ -73,7 +73,31 @@
                 <a href="#contact" class="bg-transparent hover:bg-white hover:text-gray-900 border-2 border-white text-white font-bold py-3 px-8 rounded-full transition duration-300">Get a Quote</a>
             </div>
         </div>
-    </section>
+    </section> -->
+    <section id="home" class="relative text-white py-20 md:py-32 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('/images/hero-bg.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60"></div>
+      
+        <div class="relative container mx-auto px-4 text-center z-10">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">Premium Window Coverings</h1>
+          <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Experience the perfect blend of style, functionality, and quality with Sonata Blinds' premium window treatment solutions.</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+            <a href="#products" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Explore Products</a>
+            <a href="#contact" class="bg-transparent hover:bg-white hover:text-gray-900 border-2 border-white text-white font-bold py-3 px-8 rounded-full transition duration-300">Get a Quote</a>
+          </div>
+      
+          <!-- Product Image Showcase -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 max-w-5xl mx-auto mt-10">
+            <img src="/images/blind1.jpg" alt="Wooden Blinds" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+            <img src="/images/blind2.jpg" alt="Roller Blinds" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+            <img src="/images/blind3.jpg" alt="Roman Shades" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+            <img src="/images/blind4.jpg" alt="Zebra Blinds" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+            <img src="/images/blind5.jpg" alt="Curtains" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+          </div>
+        </div>
+      </section>
+      
 
     <!-- Features Section -->
     <section class="bg-white py-16">
