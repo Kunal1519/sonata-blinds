@@ -6,7 +6,12 @@
     <title>Sonata Blinds - Premium Window Covering Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
+        body {
+      font-family: 'Inter', sans-serif;
+    }
         .hero-bg {
             background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
@@ -32,13 +37,13 @@
         }
     </style>
 </head>
-<body class="font-sans bg-gray-50">
+<body class="bg-black text-white">
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
                 <i class="fas fa-blinds text-amber-600 text-3xl mr-3"></i>
-                <img src="/images/logo.jpg" alt="Logo" style="width: 150px;">
+                <img src="/images/logo.jpg" alt="Logo" style="width: 100px;">
             </div>
             <nav class="hidden md:flex space-x-8">
                 <a href="#home" class="nav-link text-gray-700 font-medium hover:text-amber-600">Home</a>
@@ -74,26 +79,37 @@
             </div>
         </div>
     </section> -->
-    <section id="home" class="relative text-white py-20 md:py-32 overflow-hidden">
-        <!-- Background Image -->
-        <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('/images/hero-bg.jpg');"></div>
+    <section id="home" class="relative py-20 md:py-32 overflow-hidden">
+        <!-- Background -->
+        <div class="absolute inset-0 bg-cover bg-center opacity-40"
+             style="background-image: url('/mnt/data/A_hero_section_image_for_Sonata_Blinds_showcases_p.png');">
+        </div>
         <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60"></div>
       
-        <div class="relative container mx-auto px-4 text-center z-10">
-          <h1 class="text-4xl md:text-6xl font-bold mb-6">Premium Window Coverings</h1>
-          <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Experience the perfect blend of style, functionality, and quality with Sonata Blinds' premium window treatment solutions.</p>
+        <div class="relative z-10 container mx-auto px-4 text-center">
+          <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Premium Window Coverings</h1>
+          <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+            Experience the perfect blend of style, functionality, and quality with Sonata Blinds' premium window treatment solutions.
+          </p>
           <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-            <a href="#products" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Explore Products</a>
-            <a href="#contact" class="bg-transparent hover:bg-white hover:text-gray-900 border-2 border-white text-white font-bold py-3 px-8 rounded-full transition duration-300">Get a Quote</a>
+            <a href="#products" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+              Explore Products
+            </a>
+            <a href="#contact" class="bg-transparent hover:bg-white hover:text-gray-900 border-2 border-white text-white font-bold py-3 px-8 rounded-full transition duration-300">
+              Get a Quote
+            </a>
           </div>
       
-          <!-- Product Image Showcase -->
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 max-w-5xl mx-auto mt-10">
-            <img src="/images/blind1.jpg" alt="Wooden Blinds" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-            <img src="/images/blind2.jpg" alt="Roller Blinds" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-            <img src="/images/blind3.jpg" alt="Roman Shades" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-            <img src="/images/blind4.jpg" alt="Zebra Blinds" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-            <img src="/images/blind5.jpg" alt="Curtains" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+          <!-- Carousel -->
+          <div class="flex gap-4 overflow-x-auto justify-center px-2">
+            <img src="https://source.unsplash.com/featured/?wooden-blinds" alt="Wooden Blinds"
+                 class="rounded-lg shadow-lg h-48 min-w-[180px] hover:scale-105 transition-transform duration-300" />
+            <img src="https://source.unsplash.com/featured/?roller-blinds" alt="Roller Blinds"
+                 class="rounded-lg shadow-lg h-48 min-w-[180px] hover:scale-105 transition-transform duration-300" />
+            <img src="https://source.unsplash.com/featured/?zebra-blinds" alt="Zebra Blinds"
+                 class="rounded-lg shadow-lg h-48 min-w-[180px] hover:scale-105 transition-transform duration-300" />
+            <img src="https://source.unsplash.com/featured/?curtains" alt="Curtains"
+                 class="rounded-lg shadow-lg h-48 min-w-[180px] hover:scale-105 transition-transform duration-300" />
           </div>
         </div>
       </section>
